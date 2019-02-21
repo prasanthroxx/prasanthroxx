@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Home page</title>
+      <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="w3.css">
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+   </head>
+  <body>
+
+  <div class="header">
+    <h2 class="logo">E_Shopping</h2>
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn">
+      <i class="fas fa-ellipsis-h"></i>
+    </label>
+
+
+    <ul class="menu">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+      <a href="feedback.html">Feedback</a>
+      <label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+      </label>
+    </ul>
+  </div>
+
+<div class="w3-content w3-section" style="max-width:device-width">
+  <img class="mySlides" src="pic1.jpg" style="width:100%">
+  <img class="mySlides" src="pic2.jpg" style="width:100%">
+  <img class="mySlides" src="pic3.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
+
+
+  </body>
+</html>

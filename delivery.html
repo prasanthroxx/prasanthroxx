@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <meta charset="utf-8">
+    <title>Delivery Status</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+body{
+  background: #191919;
+}
+.form{
+  width: 100px;
+  height: 10px;
+  background: #34495e;
+  margin: 40px auto;
+}
+.delivery-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.delivery-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 10px 20px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+.delivery-form-text:focus{
+  box-shadow: 0 0 10px 4px #34495e;
+}
+</style>
+  </head>
+  <body>
+    <div class="header">
+      <input type="checkbox" id="chk">
+      <label for="chk" class="show-menu-btn">
+        <i class="fas fa-ellipsis-h"></i>
+      </label>
+
+      <ul class="menu">
+        <a href="product.html">Product</a>
+          <label for="chk" class="hide-menu-btn">
+          <i class="fas fa-times"></i>
+        </label>
+      </ul>
+    </div>
+  <div class="contact-section">
+<h1>Delivery Address<h1><div>
+
+    <div class="form"></div>
+    <form class="delivery-form" action="index.html" method="post">
+    Name:  <input type="text" class="delivery-form-text"  placeholder="Name..."><br>
+    Email:  <input type="email" class="delivery-form-text" value="Email ID.."><br>
+      Phone no:  <input type="text" class="delivery-form-text"  placeholder="Type your phone no.."><br>
+    Address: <textarea class="delivery-form-text" placeholder="Address"></textarea><br>
+    Product Name:  <input type="text" class="delivery-form-text" placeholder="watch"><br>
+    Product price: <input type="text" class="delivery-form-text" value="9000  "><br>
+      <input type="radio"  name="payment" value="cash on delivery"><font color="white">cash on delivery</font><br>
+      <input type="radio"  name="payment" value="online payment" ><font color="white">online payment</font><br>
+
+      <center>
+      <input type="submit" class="contact-form-btn" value="Send">
+    </center>
+      </form>
+  </body>
+</html>
